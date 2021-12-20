@@ -1,0 +1,8 @@
+.card-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    width:  10rem;
+
+}

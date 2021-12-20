@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+ul{list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.ulstyle li {
+    margin: 7px;
+  
+    border: 0.5px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.success{
+    color: rgb(21, 109, 43);
+    background-color: rgb(123, 218, 162);
+}
+.error{
+    color: red;
+    background-color: antiquewhite;
+}

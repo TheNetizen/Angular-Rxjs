@@ -1,0 +1,16 @@
+
+.card-body{
+text-align: center;
+padding:1rem;
+}
+.card-footer{
+    text-align: right;
+}
+.card{
+    margin:1rem;
+    
+}
+.display-6{
+    font-size: large;
+    font-weight: bold;
+}

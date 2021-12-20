@@ -1,0 +1,42 @@
+<h3>Retry, RetryWhen, Scan and Delay</h3>
+<p>In retry we can define how many times we want to retry certain request
+    where as in retrywhen we can also define the delay and number of times
+</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">Retry 3 times</div>
+            <div class="card-body">
+                <ul *ngIf='data'>
+                   <li>{{data.id}}</li>
+                   <li>{{data.name}}</li>
+                   <li>{{data.age}}</li>
+                   <li>{{data.company}}</li>
+                   <li>{{data.exp}}</li>
+                </ul>
+                <button class="btn btn-primary" type="button" (click)="fetchData()">
+                    <span [ngClass]="status?'spinner-border spinner-border-sm':''" role="status" aria-hidden="true"></span>
+                   {{status?'Loading...':'Fetch Data'}} 
+                  </button> 
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">Retry delaying 2 sec scan 4 retrys and stop</div>
+            <div class="card-body">
+                <ul *ngIf='data'>
+                   <li>{{data.id}}</li>
+                   <li>{{data.name}}</li>
+                   <li>{{data.age}}</li>
+                   <li>{{data.company}}</li>
+                   <li>{{data.exp}}</li>
+                </ul>
+                <button class="btn btn-primary" type="button" (click)="fetchData2()">
+                    <span [ngClass]="status2?'spinner-border spinner-border-sm btn-success':''" role="status" aria-hidden="true"></span>
+                   {{status?'Loading...':'Fetch Data'}} 
+                  </button> 
+            </div>
+        </div>
+    </div>
+</div>

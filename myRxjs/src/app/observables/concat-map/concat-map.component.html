@@ -1,0 +1,32 @@
+<h3>Concat Map</h3>
+<p>Flattening operator: some observables returns observable 
+    as a respond when subscribed. we need to subscribe the response again to
+     get desired value<br>
+     Therefore, to avoid this double subscribing we use flattening operator such as MergeMap, switchMapp etc.
+     <br>We are using <strong>map</strong> + <strong>concatAll</strong>=<strong>concatMap</strong> let's see step by step.
+</p>
+<br>
+<div class="row">
+    <div class="col-md-4 p-4">
+        <strong>Example-1 | Map</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News] </div>
+        <hr>
+         <ul id="elContainer"></ul>
+        
+    </div>
+    <div class="col-md-4 p-4">
+        <strong>Example-2 | Map + ConcatAll</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News] </div>
+        <hr>
+<ul id="elContainer2"></ul>
+      
+    </div>
+    <div class="col-md-4 p-4">
+        <strong>Example-3 | ConcatMap</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News]  </div>
+        <hr>
+<ul id="elContainer3"></ul>
+      
+    </div>
+</div>
+

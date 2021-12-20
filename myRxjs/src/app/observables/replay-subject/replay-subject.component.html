@@ -1,0 +1,45 @@
+<h3>Replay-Subject</h3>
+<p>Replay Subject is a Subject which when subscribed can show values already emited
+    and we can provide a number of value ex: 5 which shows last 5 emited values.
+    <br> We can pass miliseconds as second parameter which will allow to return only those values which 
+    are emited before the mentioned time when subscribed.
+</p>
+<br>
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card p-2 m-2">
+            <strong>Data:</strong>
+            <input type="text" class="form-control"  #myInput>
+            <button class="btn btn-success m-2" (click)=emitData(myInput.value)>Emit</button>
+        </div>
+       
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <strong>Ex-01</strong>
+            <ul id="elContainer">
+               <li *ngFor="let i of arr1">{{i}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <strong>Ex-02</strong>
+            <ul id="elContainer2">
+                <li *ngFor="let i of arr2">{{i}}</li>
+            </ul>
+            <button class="btn btn-sm" [ngClass]="subStatus1?'btn-danger':'btn-success'" (click)="subClick1()">{{subStatus1?"Unsubscribe":"Subscribe"}}</button>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <strong>Ex-03</strong>
+            <ul id="elContainer3">
+                <li *ngFor="let i of arr3">{{i}}</li>
+            </ul>
+            <button class="btn btn-sm" [ngClass]="subStatus2?'btn-danger':'btn-success'" (click)="subClick2()">{{subStatus2?"Unsubscribe":"Subscribe"}}</button>
+        </div>
+    </div>
+</div>

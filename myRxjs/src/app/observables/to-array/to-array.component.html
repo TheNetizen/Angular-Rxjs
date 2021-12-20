@@ -1,0 +1,36 @@
+<h3>ToArray</h3>
+<p>It collects all source emmision and 
+    emits the as an array when source completes</p>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">Interval</div>
+                <div class="card-body">
+                    <ul *ngFor="let i of msg">
+                       <li>{{i}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">From</div>
+                <div class="card-body">
+                    <ul *ngFor="let i of msgFrom">
+                       <li>{{i.Firstname+" "+i.Lastname}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">Of</div>
+                <div class="card-body">
+                    <ul *ngFor="let i of msgOf">
+                       <li>{{i}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>

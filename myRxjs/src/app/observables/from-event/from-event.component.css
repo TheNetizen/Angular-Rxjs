@@ -1,0 +1,13 @@
+.card-body {
+  text-align: center;
+  padding: 1rem;
+}
+.card-footer {
+  text-align: right;
+}
+.card {
+  margin: 2rem;
+}
+.btn {
+  width: 10rem;
+}

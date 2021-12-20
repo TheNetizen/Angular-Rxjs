@@ -1,0 +1,33 @@
+<h3>Switch Map</h3>
+<p>Flattening operator: some observables returns observable 
+    as a respond when subscribed. we need to subscribe the response again to
+     get desired value<br>
+     Therefore, to avoid this double subscribing we use flattening operator such as MergeMap, switchMapp etc.
+     <br>We are using <strong>map</strong>+ <strong>switchAll</strong>=<strong>switchMap</strong> let's see step by step.
+     <br>switchAll cancels previous request and returns the new requests
+</p>
+<br>
+<div class="row">
+    <div class="col-md-4 p-4">
+        <strong>Example-1 | Map</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News] </div>
+        <hr>
+         <ul id="elContainer"></ul>
+        
+    </div>
+    <div class="col-md-4 p-4">
+        <strong>Example-2 | Map + SwitchAll</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News] </div>
+        <hr>
+<ul id="elContainer2"></ul>
+      
+    </div>
+    <div class="col-md-4 p-4">
+        <strong>Example-3 | SwitchMap</strong>
+        <div class="alert-secondary"><strong >Videos : </strong> [Tech,Comedy,News]  </div>
+        <hr>
+<ul id="elContainer3"></ul>
+      
+    </div>
+</div>
+

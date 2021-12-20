@@ -1,0 +1,50 @@
+<h3>Pluck with Objects</h3>
+<p>Pluck is replacement of map. It can extract value of properties 
+    in object which is observable and can also use to pluck value From
+    nested object.
+</p>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">Pluck in Object</div>
+            <div class="card-body">
+                <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    <table class="table table-stripped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                            <tr *ngFor='let i of arrname'>
+                                <td>{{i}}</td>
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-5">
+                    <table class="table table-stripped">
+                        <thead class="thead-dark">
+                            <tr>
+                             
+                                <th>Job>Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                            <tr *ngFor='let i of arr'>
+                                <td>{{i}}</td>
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    padding:2vh;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #e3106200;
+    border: 0px solid transparent;
+    border-radius: 0;
+    transition: box-shadow 0.15s ease-in-out;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem; 
+}
+.nav-item{
+    float:right;
+}
+.navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    position: absolute;
+    right: 5%;
+}
+.badge {
+    padding: 2px 5px 2px 5px;
+    margin-left: 20px;
+}

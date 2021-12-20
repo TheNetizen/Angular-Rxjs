@@ -1,0 +1,22 @@
+<h3>Interval</h3>
+<div class="row">
+    <div class="col-md-4 offset-2">
+        <div class="card">
+            <div class="card-header">Add Element</div>
+            <div class="card-body">
+                <button class="btn btn-primary" (click)="startSubscription()">Start</button>
+                <button class="btn btn-primary" (click)="stopSubscription()">Stop</button>
+            </div>
+        </div>  
+    </div>
+    
+    <div class="col-md-4 "> 
+        <div class="card">
+            <div class="card-header">Display Item </div>
+            <div class="card-body" id="displayItem"><h6>{{val}}</h6>
+             <ul id="elContainer"></ul>
+            </div>
+        </div>
+    
+</div>
+</div>

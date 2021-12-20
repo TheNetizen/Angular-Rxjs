@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Filter by Length</div>
+      <div class="card-body">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Id</th>
+                      <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                  </tr>
+                </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Filter by Gender
+        <select #gs (change)='filtergen(gs.value)'>
+          <option value="" selected disabled>-select-</option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </div>
+
+      <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let i of data2">
+                  <td>{{i.id}}</td>
+                  <td>{{i.name}}</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Filter by Nth Item</div>
+      <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+              </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
