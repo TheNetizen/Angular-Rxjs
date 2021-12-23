@@ -1,0 +1,43 @@
+<h3>CombineLatest and withLatestFrom</h3>
+<p>In CombineLatest it combines latest value of 2 observable and returns value
+    that is whenever a change is detected in any one of the observables it returns
+    the changes
+    <br>In withLatestFrom we declare one observable as master and other as slave.
+    Changes are reflected only when master value is changed
+</p>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <strong>Names</strong>
+        <hr>
+        <select class="form-control" #name>
+            <option value="" selected disabled>-select-</option>
+            <option value="Ross">Ross</option>
+            <option value="Rachel">Rachel</option>
+            <option value="Chandler">Chandler</option>
+            <option value="Monica">Monica</option>
+            <option value="Phoebe">Phoebe</option>
+            <option value="Joey">Joey</option>
+        </select>
+        <hr>
+        <strong>Colors</strong>
+        <hr>
+        <select class="form-control" #clr>
+            <option value="" selected disabled>-select-</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+
+        </select>
+    </div>
+    <div class="col-md-8">
+        <strong>CombineLatest</strong>
+        <hr>
+        <div id="block"></div>
+        <hr>
+        <strong>withLatestFrom</strong>
+        <hr>
+        <div id="block2"></div>
+    </div>
+   
+</div>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsyncSubjectComponent } from './observables/async-subject/async-subject.component';
+import { CombineLatestComponent } from './observables/combine-latest/combine-latest.component';
 import { ConcatMapComponent } from './observables/concat-map/concat-map.component';
 import { ConcatComponent } from './observables/concat/concat.component';
 import { CustomObservablesComponent } from './observables/custom-observables/custom-observables.component';
@@ -23,6 +24,7 @@ import { SwitchMapComponent } from './observables/switch-map/switch-map.componen
 import { TakeComponent } from './observables/take/take.component';
 import { TapComponent } from './observables/tap/tap.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
+import { ZipForkjoinComponent } from './observables/zip-forkjoin/zip-forkjoin.component';
 
 
 const routes: Routes = [
@@ -48,7 +50,9 @@ const routes: Routes = [
       {path:'concatMap',component:ConcatMapComponent},
       {path:'switchMap',component:SwitchMapComponent},
       {path:'exhaustMap',component:ExhaustMapComponent},
-      {path:'searchBar',component:LiveSearchBarComponent}
+      {path:'searchBar',component:LiveSearchBarComponent},
+      {path:'combineLatest',component:CombineLatestComponent},
+      {path:'ZipForkJoin',component:ZipForkjoinComponent}
       
   ]}
   

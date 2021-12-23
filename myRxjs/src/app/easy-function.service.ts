@@ -19,5 +19,7 @@ export class EasyFunctionService {
   getData():Observable<any>{
     return this.http.get<any>('http://localhost:3000').pipe(retry(3))
   }
-
+  getExhaustMapData():Observable<any>{
+    return this.http.get<any>('https://jsonplaceholder.typicode.com/photos').pipe(retry(3))
+  }
 }

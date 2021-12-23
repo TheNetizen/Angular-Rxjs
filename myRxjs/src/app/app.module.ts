@@ -29,6 +29,8 @@ import { ConcatMapComponent } from './observables/concat-map/concat-map.componen
 import { SwitchMapComponent } from './observables/switch-map/switch-map.component';
 import { ExhaustMapComponent } from './observables/exhaust-map/exhaust-map.component';
 import { LiveSearchBarComponent } from './observables/live-search-bar/live-search-bar.component';
+import { CombineLatestComponent } from './observables/combine-latest/combine-latest.component';
+import { ZipForkjoinComponent } from './observables/zip-forkjoin/zip-forkjoin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +59,9 @@ import { LiveSearchBarComponent } from './observables/live-search-bar/live-searc
     ConcatMapComponent,
     SwitchMapComponent,
     ExhaustMapComponent,
-    LiveSearchBarComponent
+    LiveSearchBarComponent,
+    CombineLatestComponent,
+    ZipForkjoinComponent
   ],
   imports: [
     BrowserModule,
